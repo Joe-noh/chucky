@@ -10,7 +10,7 @@ defmodule Chucky.Server do
   end
 
   def init(_) do
-    :rand.seed(:os.timestamp())
+    :rand.seed(:exs64, :os.timestamp())
 
     facts = [
       "Chuck Norris's keyboard doesn't have a Ctrl key because nothing controls Chuck Norris.",
